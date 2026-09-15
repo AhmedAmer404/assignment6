@@ -67,6 +67,18 @@ namespace assignment6
             Console.WriteLine(genre1);
             #endregion
 
+            #region Question 8
+            string genreText2 = "Mystery";
+            if (Enum.TryParse<Genre>(genreText2, out Genre genre2))
+            {
+                Console.WriteLine(genre2);
+            }
+            else
+            {
+                Console.WriteLine("Unknown genre");
+            }
+            #endregion
+
 
 
         }
