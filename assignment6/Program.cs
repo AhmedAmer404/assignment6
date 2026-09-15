@@ -55,6 +55,12 @@ namespace assignment6
             Console.WriteLine((int)Genre.Science);
             #endregion
 
+            #region Question 6
+            int genreNumber = 1;
+            Genre genre = (Genre)genreNumber;
+            Console.WriteLine(genre);
+            #endregion
+
 
 
         }
