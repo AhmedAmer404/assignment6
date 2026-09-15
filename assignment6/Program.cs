@@ -3,6 +3,13 @@ using System.Reflection;
 
 namespace assignment6
 {
+    enum Genre
+    {
+        Fiction,
+        NonFiction,
+        Science
+        
+    }
     class Book
     {
         private string password = "secret";
@@ -10,8 +17,10 @@ namespace assignment6
 
         public string Title;
 
+        public Genre Genre;
 
-    
+
+
     }
 
     class program
@@ -34,6 +43,13 @@ namespace assignment6
             Console.WriteLine(book.Title);
             // This will print "C# Programming" public member can be accessed from anywhere
             #endregion
+
+            #region Question 4
+            book.Genre = Genre.Science;
+            Console.WriteLine(book.Genre);
+            #endregion
+
+
 
         }
     }
