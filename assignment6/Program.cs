@@ -61,6 +61,12 @@ namespace assignment6
             Console.WriteLine(genre);
             #endregion
 
+            #region Question 7
+            string genreText = "Science";
+            Genre genre1 = Enum.Parse<Genre>(genreText);
+            Console.WriteLine(genre1);
+            #endregion
+
 
 
         }
