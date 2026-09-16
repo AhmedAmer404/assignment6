@@ -3,6 +3,27 @@ using System.Reflection;
 
 namespace assignment6
 {
+
+    public struct DeliveryAddress
+    {
+        public string City;
+        public string Street;
+
+        public int BuildingNumber;
+
+       public DeliveryAddress(string city, string street, int buildingNumber)
+        {
+            City = city;
+            Street = street;
+            BuildingNumber = buildingNumber;
+        }
+
+        public String GetFullAddress()
+        {
+            return $"{Street} {BuildingNumber}, {City}";
+        }
+
+    }
     enum Genre
     {
         Fiction,
@@ -78,6 +99,22 @@ namespace assignment6
                 Console.WriteLine("Unknown genre");
             }
             #endregion
+
+            #region Question 9
+
+            DeliveryAddress address1 = new DeliveryAddress("Egypt", "AboElaraby", 49);
+
+            DeliveryAddress address2 = address1;
+
+            address2.City = "USA";
+            address2.BuildingNumber = 78;
+
+            Console.WriteLine(address1.GetFullAddress());
+            Console.WriteLine(address2.GetFullAddress());
+
+            #endregion
+
+
 
 
 
